@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tienganh = ['boy', 'girl', 'city', 'football'];
+        let tiengviet = ['trai', 'gai', 'thanh pho', 'bong da'];
+        let word = prompt('nhap vao 1 tu');
+        check = false;
+        for (i=0; i<tienganh.length; i++){
+            if (word == tienganh[i]) {
+                check =true;
+                index = i
+            }
+        }
+        if (check) {
+            alert('Nghia cua tu '+word+' la '+tiengviet[index])
+        } else {
+            alert('tu '+word+' khong co trong tu dien ')
+        }
+    </script>
+</body>
+</html>
